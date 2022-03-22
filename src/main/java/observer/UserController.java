@@ -10,7 +10,10 @@ import java.util.List;
  * @date 2022/3/22
  */
 public class UserController {
-    private UserService userService; // 依赖注入
+
+    // 依赖注入
+    private UserService userService;
+
     private List<RegObserver> regObservers = new ArrayList<>();
 
     // 一次性设置好，之后也不可能动态的修改

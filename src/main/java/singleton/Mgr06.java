@@ -17,6 +17,7 @@ public class Mgr06 {
     }
 
     public static Mgr06 getInstance() {
+        // Double Check Lock
         if (INSTANCE == null) {
             // 双重检查
             synchronized (Mgr06.class) {

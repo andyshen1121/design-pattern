@@ -7,6 +7,9 @@ package singleton;
  * @date 2022/4/13
  */
 public class Mgr06 {
+    /**
+     * 禁止指令重排序，不加的话，第二个线程可能使用半初始化状态的对象
+     */
     private static volatile Mgr06 INSTANCE;
 
     /**
